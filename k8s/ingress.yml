@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: spring-music
+  namespace: default
+spec:
+  rules:
+  - host: spring-music.default.cluster-1.pks.atherton.cf-aps.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: spring-music
+          servicePort: 80
