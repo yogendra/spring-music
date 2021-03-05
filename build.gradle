@@ -47,6 +47,7 @@ dependencies {
     runtimeOnly "mysql:mysql-connector-java"
     runtimeOnly "org.postgresql:postgresql"
     runtimeOnly "com.microsoft.sqlserver:mssql-jdbc"
+    runtimeOnly "com.oracle.ojdbc:ojdbc10:19.3.0.0"
 
     // uncomment to use Lettuce instead of Jedis for Redis connections
     // runtime "io.lettuce:lettuce-core"
